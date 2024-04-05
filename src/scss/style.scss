@@ -4,10 +4,16 @@
 @import "aside";
 @import "main";
 
-
-
 body {
-	// font-family: $fontFamily;
-	// font-size: $fontSize;
-	// color: $blackColor;
+	font-family: $fontFamily;
+	font-size: $fontSize;
+	color: $darkGrey;
+	background-color: $mainColorBg;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	max-width: 1440px;
+	margin: 0 auto;
 }
