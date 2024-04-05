@@ -9,6 +9,10 @@ body {
 	font-size: $fontSize;
 	color: $darkGrey;
 	background-color: $mainColorBg;
+
+	&._lock {
+		overflow: hidden;
+	}
 }
 
 .wrapper {
@@ -17,3 +21,4 @@ body {
 	max-width: 1440px;
 	margin: 0 auto;
 }
+
