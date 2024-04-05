@@ -1,0 +1,12 @@
+@import "fonts";
+@import "reset";
+@import "utils";
+@import "main";
+@import "footer";
+
+
+body {
+	font-family: $fontFamily;
+	font-size: $fontSize;
+	color: $blackColor;
+}
