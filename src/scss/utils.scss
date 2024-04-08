@@ -26,6 +26,18 @@ $containerWidth: 1317px;
    margin: 0px auto;
 }
 
+._open {
+	background-color: $violetColor;
+	.nav__item-tooltip {
+		color: $whiteColor;
+	}
+	.nav__item-image,
+	.nav__item-arrow  {
+		filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(226deg) brightness(106%) contrast(104%);
+	}
+}
+
+
 
 
 

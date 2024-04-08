@@ -21,6 +21,8 @@
 	@media (min-width: 992px) {
 		position: static; 	
 		overflow: auto;
+		display: flex;
+		flex-direction: column;
 	}
 	&-icon {
 		z-index: 5;
@@ -30,12 +32,12 @@
 		cursor: pointer;
 		position: fixed;
 		top: 45px;
-		left: 40px;
-		transition: left .3s ease 0s;
+		left: 40px;    
+		transition: left 0.3s ease-out 0s;
 		&._active {
 			top: 45px;
 			left: 265px;
-			transition: left .3s ease 0s;
+			transition: left 0.3s ease-out 0s;
 		}
 		span,
 		&::before,
