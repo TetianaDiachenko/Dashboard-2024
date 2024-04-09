@@ -6,25 +6,10 @@ $whiteColor: #FFFFFF;
 $blackColor: #000000;
 $darkGrey: #292d32;
 $lightGrey: #9197b3;
-$darkGreen: #008767;
 $fontLightGrey: #B5B7C0;
-$lightGreen: #00b087;
-$pinkColor: #FFC5C5;
-$redColor: #DF0404;
 $violetColor: #5932EA;
 $mainColorBg: #fafbff;
 $maxWidth: 1440px;
-$containerWidth: 1317px;
-
-._container {
-   max-width: $containerWidth;
-   margin: 0px auto;
-}
-
-._maxContainer {
-   max-width: $maxWidth;
-   margin: 0px auto;
-}
 
 ._open {
 	background-color: $violetColor;
@@ -36,10 +21,33 @@ $containerWidth: 1317px;
 		filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(226deg) brightness(106%) contrast(104%);
 	}
 }
+._act,
+._inact {
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: -0.14px;
+	border-radius: 4px;
+	padding: 4px 12px;
+	width: 80px;
+	height: 29px;
+	transition: all 0.3s ease 0s;
+}
+._act {
+	color: #008767;;
+	background-color:#16c09861;
+	border: 1px solid #00b087;
+	&:hover {
+		background-color:  #0af2ba61;
+		transition: all 0.3s ease 0s;
+	}
+}
 
-
-
-
-
-
-
+._inact {
+	color: #DF0404;
+	background-color: #FFC5C5;;
+	border: 1px solid #DF0404;
+	&:hover {
+		background-color:  #0af2ba61;
+		transition: all 0.3s ease 0s;
+	}
+}
