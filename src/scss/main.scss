@@ -195,6 +195,10 @@
 	&__item-page:hover {
 		color: $whiteColor;
 	}
+	&__item-pre img,
+	&__item-next img {
+		vertical-align: middle;
+	}
 	&__item-pre:hover img,
 	&__item-next:hover img{
 		filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(226deg) brightness(106%) contrast(104%);
