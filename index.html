@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240409122059">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<title>Dashboard</title>
+</head>
+<body>
+	<main>
+		<div class="wrapper">
+			
+	<aside class="sidebar__wrapper">
+		<div class="sidebar-icon">
+			<span></span>
+		</div>
+		<div class="sidebar">
+			<div class="sidebar__header">
+				<div class="sidebar__logo">
+					<img src="img/logo.svg" alt="logo">
+				</div>
+				<div class="sidebar__logo-text">
+					<p>Dashboard</p>
+					<span>v.01</span>
+				</div>
+			</div>
+			<div class="sidebar__nav nav">
+				<ul class="nav__items">
+					<li class="nav__item">
+						<a href="#" class="nav__item-link">
+							<div class="nav__item-image">
+								<img src="img/icons/icons.svg#key-square" class="svg-key-square-dims" alt="key-square">
+							</div>
+							<div class="nav__item-tooltip">
+								<p>Dashboard</p>
+							</div>
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__item-link">
+							<div class="nav__item-image">
+								<img src="img/icons/icons.svg#3d-square" class="svg-3d-square-dims" alt="3d-square">
+							</div>
+							<div class="nav__item-tooltip">
+								<p>Product</p>
+							</div>
+							<div class="nav__item-arrow">
+								<picture><source srcset="img/chevron-right.webp" type="image/webp"><img src="img/chevron-right.png" alt="chevron-right"></picture>
+							</div>
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__item-link _open">
+							<div class="nav__item-image">
+								<img src="img/icons/icons.svg#user-square" class="svg-user-square-dims" alt="user-square">
+							</div>
+							<div class="nav__item-tooltip">
+								<p>Customers</p>
+							</div>
+							<div class="nav__item-arrow">
+								<picture><source srcset="img/chevron-right.webp" type="image/webp"><img src="img/chevron-right.png" alt="chevron-right"></picture>
+							</div>
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__item-link">
+							<div class="nav__item-image">
+								<img src="img/icons/icons.svg#wallet-money" class="svg-wallet-money-dims" alt="wallet-money">
+							</div>
+							<div class="nav__item-tooltip">
+								<p>Income</p>
+							</div>
+							<div class="nav__item-arrow">
+								<picture><source srcset="img/chevron-right.webp" type="image/webp"><img src="img/chevron-right.png" alt="chevron-right"></picture>
+							</div>
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__item-link">
+							<div class="nav__item-image">
+								<img src="img/icons/icons.svg#discount-shape" class="svg-discount-shape-dims" alt="discount-shape">
+							</div>
+							<div class="nav__item-tooltip">
+								<p>Promote</p>
+							</div>
+							<div class="nav__item-arrow">
+								<picture><source srcset="img/chevron-right.webp" type="image/webp"><img src="img/chevron-right.png" alt="chevron-right"></picture>
+							</div>
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__item-link">
+							<div class="nav__item-image">
+								<img src="img/icons/icons.svg#message-question" class="svg-message-question-dims" alt="message-question">
+							</div>
+							<div class="nav__item-tooltip">
+								<p>Help</p>
+							</div>
+							<div class="nav__item-arrow">
+								<picture><source srcset="img/chevron-right.webp" type="image/webp"><img src="img/chevron-right.png" alt="chevron-right"></picture>
+							</div>
+						</a>
+					</li>
+				</ul>
+
+			</div>
+			<div class="sidebar__footer">
+				<div class="sidebar__footer-image">
+					<picture><source srcset="img/Evano.webp" type="image/webp"><img src="img/Evano.png" alt="Evano"></picture>
+				</div>
+				<div class="sidebar__footer-info">
+					<div class="sidebar__footer-name">
+						<p>Evano</p>
+					</div>
+					<div class="sidebar__footer-work">
+						<p>Project Manager</p>
+					</div>
+				</div>
+			</div>
+	</div>
+</aside>
+			<div class="main">
+	<div class="main__header">
+		<h1>Hello Evano 👋🏼,</h1>
+	</div>
+	<div class="main__content">
+		<div class="main__content-top">
+			<div class="main__content-head">
+				<h2 class="main__content-title">All Customers</h2>
+				<p class="main__content-sutitle">Active Members</p>
+			</div>
+			<div class="main__content-search main__search">
+				<input class="main__search-input" id="main_search" type="text" placeholder="Search">
+				<div class="main__search-img">
+					<img src="img/icons/icons.svg#search" class="svg-search-dims" alt="search">
+				</div>
+			</div>
+		</div>
+		<div class="main__content-body">
+			<table class="main__content-table table" id="userTable">
+				<thead class="table__title">
+					<tr>
+						<th>Customer Name</th>
+						<th>Company</th>
+						<th>Phone Number</th>
+						<th>Email</th>
+						<th>Country</th>
+						<th>Status</th>
+					</tr>
+				</thead>
+				<tbody id="tbody">
+					<tr>
+						<td>Jane Cooper</td>
+						<td>Microsoft</td>
+						<td>(225) 555-0118</td>
+						<td>jane@microsoft.com</td>
+						<td>United States</td>
+						<td>
+							<button class="table__button _act">Active</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Jane Cooper</td>
+						<td>Microsoft</td>
+						<td>(225) 555-0118</td>
+						<td>jane@microsoft.com</td>
+						<td>United States</td>
+						<td>
+							<button class="table__button _inact">Inactive</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Jane Cooper</td>
+						<td>Microsoft</td>
+						<td>(225) 555-0118</td>
+						<td>jane@microsoft.com</td>
+						<td>United States</td>
+						<td>
+							<button class="table__button _inact">Inactive</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Jane Cooper</td>
+						<td>Microsoft</td>
+						<td>(225) 555-0118</td>
+						<td>jane@microsoft.com</td>
+						<td>United States</td>
+						<td>
+							<button class="table__button _act">Active</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Jane Cooper</td>
+						<td>Microsoft</td>
+						<td>(225) 555-0118</td>
+						<td>jane@microsoft.com</td>
+						<td>United States</td>
+						<td>
+							<button class="table__button _act">Active</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Jane Cooper</td>
+						<td>Microsoft</td>
+						<td>(225) 555-0118</td>
+						<td>jane@microsoft.com</td>
+						<td>United States</td>
+						<td>
+							<button class="table__button _act">Active</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Jane Cooper</td>
+						<td>Microsoft</td>
+						<td>(225) 555-0118</td>
+						<td>jane@microsoft.com</td>
+						<td>United States</td>
+						<td>
+							<button class="table__button _act">Active</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Jane Cooper</td>
+						<td>Microsoft</td>
+						<td>(225) 555-0118</td>
+						<td>jane@microsoft.com</td>
+						<td>United States</td>
+						<td>
+							<button class="table__button _inact">Inactive</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="main__content-bottom">
+			<div class="main__content-numbers">Showing data 1 to 8 of  256K entries</div>
+			<div class="main__content-pag pag">
+				<ul class="pag__items">
+					<li class="pag__item pag__item-pre">
+						<picture><source srcset="img/arrow-left.webp" type="image/webp"><img src="img/arrow-left.png" alt="arrow-left"></picture>
+					</li>
+					<li class="pag__item pag__item-page">1</li>
+					<li class="pag__item pag__item-page">2</li>
+					<li class="pag__item pag__item-page">3</li>
+					<li class="pag__item pag__item-page">4</li>
+					<li class="pag__item pag__item-dot">...</li>
+					<li class="pag__item pag__item-page">40</li>
+					<li class="pag__item pag__item-next">
+						<picture><source srcset="img/arrow-right.webp" type="image/webp"><img src="img/arrow-right.png" alt="arrow-right"></picture>
+					</li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+</div>
+		</div>
+	</main>
+	<script src="js/app.min.js?_v=20240409122059"></script>
+</body>
+</html>
