@@ -1,9 +1,13 @@
 .main {
 	width: 100%;
+	margin: 0 auto;
+	max-width: 968px;
 	padding: 20px;		
-	@media (min-width: 992px) {
+	@media (min-width: 1200px) {
 		width: calc(100% - 306px);
+		max-width: 100%;
 		padding: 47px 95px 20px 71px;		
+		margin: 0;
 	}
 
 	&__header {
@@ -13,7 +17,7 @@
 		text-align: center;
 		padding-top: 20px;
 		padding-bottom: 30px;
-		@media (min-width: 992px) {  
+		@media (min-width: 1200px) {  
 			text-align: start;
 			padding-top: 0px;
 			padding-bottom: 57px;
@@ -34,7 +38,7 @@
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		@media (min-width: 992px) {
+		@media (min-width: 1200px) {
 			flex-direction: row;
 			justify-content: space-between;
 			text-align: start;
@@ -55,7 +59,7 @@
 	&__search {
 		position: relative;
 		margin-top: 20px;
-		@media (min-width: 992px) {
+		@media (min-width: 1200px) {
 			margin-top: 0px;
 		}
 	}
@@ -83,7 +87,10 @@
 	&__content-body {
 		width: 100%;
 		height: 100%;
-		padding: 0px 44px 30px 38px;		
+		padding: 0px 30px 30px;	
+		@media (min-width: 1200px) {
+			padding: 0px 44px 30px 38px;	
+		}			
 	}
 
 	&__content-table {
@@ -92,21 +99,34 @@
 
 	&__content-bottom {
 		display: flex;
+		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
 		padding: 0px 44px 0px 38px;		
+		@media (min-width: 768px) {
+			flex-direction: row;
+		}
 	}
 
 	&__content-numbers {
 		color: $fontLightGrey;
 		font-weight: 500;
+		padding-bottom: 30px;
+		@media (min-width: 768px) {
+			padding-bottom: 0px;
+		}
 	}
 }
 .table {
+	display: none;
 	text-align: left;
-   border-collapse: collapse;
-	font-weight: 500;
-	thead th {
+	border-collapse: collapse;
+	font-weight: 500;	
+
+	@media (min-width: 768px) {
+		display: table;
+	}
+		thead th {
 		padding: 8px 0px 15px;
    	border-bottom: 1px solid #eee;
 	}
@@ -123,16 +143,14 @@
 	&__title {
 		color: $fontLightGrey;	
 		align-items: start;
-	}
+	}			
 }
 
-.pag {
-	
+.pag {	
 	&__items {
 	display: inline-flex;
 	gap: 11px;
 	}
-
 	&__item {
 		color: #404b52;
 		font-weight: 500;
@@ -163,7 +181,6 @@
 	&__item-next:hover img{
 		filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(226deg) brightness(106%) contrast(104%);
 	}
-
 }
 
 

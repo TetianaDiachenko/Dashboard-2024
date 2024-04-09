@@ -18,7 +18,7 @@
 		flex-direction: column;
 		transition: left .3s ease 0s;
 	}
-	@media (min-width: 992px) {
+	@media (min-width: 1200px) {
 		position: sticky; 	
 		overflow: auto;
 		display: flex;
@@ -73,7 +73,7 @@
 			top: 50%;
 			transform: rotate(45deg) translate(0px, -50%);
 		}
-		@media (min-width: 992px) {
+		@media (min-width: 1200px) {
 			display: none;
 		}				
 	}	
