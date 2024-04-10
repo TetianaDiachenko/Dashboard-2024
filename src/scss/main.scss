@@ -200,12 +200,14 @@
 		height: 24px;
 		text-align: center;
 		transition: all 0.3s ease 0s;
-		&:hover {
+		&:hover,
+		&._visible {
 			background-color: $violetColor;
 			transition: all 0.3s ease 0s;
 		}
 	}
-	&__item-page:hover {
+	&__item-page:hover,
+	&__item-page._visible {
 		color: $whiteColor;
 	}
 	&__item-pre img,
